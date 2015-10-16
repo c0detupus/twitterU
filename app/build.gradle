@@ -21,7 +21,7 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:22.0.0'
+   
 
 
 
@@ -30,4 +30,15 @@ dependencies {
         exclude group: 'commons-logging', module: 'commons-logging'
         exclude group: 'org.apache.httpcomponents', module: 'httpclient'
     }
+
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        compile 'com.etsy.android.grid:library:1.0.5' // see changelog
+    }
+
+
 }

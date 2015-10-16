@@ -2,32 +2,18 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\c0detupus\AndroidStudioProjects\TwitterU\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\libs\internal_impl-22.0.0.jar"
+        jar="C:\Users\c0detupus\Android\AndroidStudioProjects\TwitterU\app\build\intermediates\exploded-aar\com.etsy.android.grid\library\1.0.5\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
-        <dex dex="C:\Users\c0detupus\AndroidStudioProjects\TwitterU\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-0edf15e00a31037b8cf36ba926b9edf4b5cef797.jar" />
+        sha1="8218789edb56bdcfff7da48e892b37460fc707e2">
+        <dex dex="C:\Users\c0detupus\Android\AndroidStudioProjects\TwitterU\app\build\intermediates\pre-dexed\debug\classes-32d42cba3943e2852ce4a6d37f60d71e1d14d598.jar" />
     </item>
     <item
-        jar="C:\Users\c0detupus\AndroidStudioProjects\TwitterU\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\jars\classes.jar"
+        jar="C:\Users\c0detupus\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
-        <dex dex="C:\Users\c0detupus\AndroidStudioProjects\TwitterU\app\build\intermediates\pre-dexed\debug\classes-1c59f00d407dcaf3c186fb87574558451cb2eee0.jar" />
-    </item>
-    <item
-        jar="C:\Users\c0detupus\AndroidStudioProjects\TwitterU\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
-        <dex dex="C:\Users\c0detupus\AndroidStudioProjects\TwitterU\app\build\intermediates\pre-dexed\debug\classes-f87562e34269a21c68b3dded65ecdc4779c98677.jar" />
-    </item>
-    <item
-        jar="C:\Users\c0detupus\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
-        <dex dex="C:\Users\c0detupus\AndroidStudioProjects\TwitterU\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-9270f1728331939262e5e616df8cfb4dd1b1aed9.jar" />
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="C:\Users\c0detupus\Android\AndroidStudioProjects\TwitterU\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-ba8c0b004d93cf4b5b6cb18a3c3474e0f523988e.jar" />
     </item>
 
 </items>
