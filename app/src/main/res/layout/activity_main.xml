@@ -1,17 +1,8 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_holder"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_weight="1"
     android:orientation="horizontal">
 
-
-    <fragment
-        android:id="@+id/list_fragment"
-        android:name="com.afk.twitteru.MainActivityFragment"
-        android:layout_width="203dp"
-        android:layout_height="match_parent"
-        android:layout_gravity="center_vertical"
-        android:layout_weight="1"
-        tools:layout="@layout/fragment_main" />
-</LinearLayout>
+</FrameLayout>

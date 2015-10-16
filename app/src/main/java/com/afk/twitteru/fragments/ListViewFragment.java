@@ -1,4 +1,4 @@
-package com.afk.twitteru;
+package com.afk.twitteru.fragments;
 
 
 import android.app.Fragment;
@@ -7,18 +7,20 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.afk.twitteru.R;
+
 
 /**
- * A placeholder fragment containing a simple view.
+ * Will handle load list of tweets in a listview
  */
-public class MainActivityFragment extends Fragment {
+public class ListViewFragment extends Fragment {
 
-    public MainActivityFragment() {
+    public ListViewFragment() {
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_main, container, false);
+        return inflater.inflate(R.layout.fragment_list_view, container, false);
     }
 }
