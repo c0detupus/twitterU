@@ -21,8 +21,8 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-   
-
+    compile 'com.etsy.android.grid:library:1.0.5' // see changelog
+    compile 'org.twitter4j:twitter4j-core:4.0.1'
 
 
 
@@ -36,9 +36,7 @@ dependencies {
         mavenCentral()
     }
 
-    dependencies {
-        compile 'com.etsy.android.grid:library:1.0.5' // see changelog
-    }
+
 
 
 }

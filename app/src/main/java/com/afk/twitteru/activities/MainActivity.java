@@ -5,31 +5,39 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.res.Configuration;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import com.afk.twitteru.R;
-import com.afk.twitteru.enums.Tags;
 import com.afk.twitteru.fragments.ListViewFragment;
+import com.afk.twitteru.fragments.LoginFragment;
 import com.afk.twitteru.fragments.StaggeredGridFragment;
 
 import static android.content.res.Configuration.ORIENTATION_LANDSCAPE;
 import static android.content.res.Configuration.ORIENTATION_PORTRAIT;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements LoginFragment.OnFragmentInteractionListener {
+
+    // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
+    private static final String TWITTER_KEY = "brI7DXOJVCDNeUanRVnut410q";
+    private static final String TWITTER_SECRET = "7Kl2tOVOhJkZcSeczmtgkgDKKIZ7vrm2Sx2qMr6vrip08XS32C";
+
 
 
     private String log = "LOG";
-
+    private boolean loggedIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
+        loggedIn = false;
         if (findViewById(R.id.fragment_holder) != null) {
 
             if (savedInstanceState != null) {
@@ -41,10 +49,19 @@ public class MainActivity extends Activity {
             FragmentTransaction ft = fm.beginTransaction();
 
 
-            ListViewFragment listViewFragment = new ListViewFragment();
+//            ListViewFragment listViewFragment = new ListViewFragment();
+            LoginFragment loginFragment = new LoginFragment();
 
-            ft.add(R.id.fragment_holder, listViewFragment);
-            ft.commit();
+            if(loggedIn){
+               onConfigurationChanged(getResources().getConfiguration());
+            }else{
+                ft.add(R.id.fragment_holder, loginFragment);
+                ft.commit();
+
+            }
+
+//            ft.add(R.id.fragment_holder, loginFragment);
+//            ft.commit();
 
 
         }
@@ -58,7 +75,7 @@ public class MainActivity extends Activity {
         Log.d(log, "orientation changed");
 
 
-        int currentOrientation = getResources().getConfiguration().orientation;
+        int currentOrientation = newConfig.orientation;
 
 
         FragmentManager fm = getFragmentManager();
@@ -108,4 +125,8 @@ public class MainActivity extends Activity {
     }
 
 
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
+    }
 }
