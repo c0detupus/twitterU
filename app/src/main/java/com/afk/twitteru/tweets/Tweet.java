@@ -1,4 +1,4 @@
-package com.afk.twitteru.developer;
+package com.afk.twitteru.tweets;
 
 /**
  * Created by c0detupus on 2015-10-16.

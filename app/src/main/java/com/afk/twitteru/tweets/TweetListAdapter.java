@@ -1,4 +1,4 @@
-package com.afk.twitteru.developer;
+package com.afk.twitteru.tweets;
 
 import android.content.Context;
 import android.view.LayoutInflater;
