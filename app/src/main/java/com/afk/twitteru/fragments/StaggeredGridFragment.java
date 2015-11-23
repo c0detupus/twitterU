@@ -9,8 +9,8 @@ import android.view.ViewGroup;
 
 
 import com.afk.twitteru.R;
-import com.afk.twitteru.developer.Tweet;
-import com.afk.twitteru.developer.TweetListAdapter;
+import com.afk.twitteru.tweets.Tweet;
+import com.afk.twitteru.tweets.TweetListAdapter;
 import com.etsy.android.grid.StaggeredGridView;
 
 import java.util.ArrayList;

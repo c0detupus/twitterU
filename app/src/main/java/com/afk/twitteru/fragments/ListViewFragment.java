@@ -9,8 +9,8 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 import com.afk.twitteru.R;
-import com.afk.twitteru.developer.Tweet;
-import com.afk.twitteru.developer.TweetListAdapter;
+import com.afk.twitteru.tweets.Tweet;
+import com.afk.twitteru.tweets.TweetListAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

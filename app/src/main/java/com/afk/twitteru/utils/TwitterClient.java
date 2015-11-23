@@ -10,7 +10,7 @@ import com.loopj.android.http.RequestParams;
 public class TwitterClient {
 
 
-    private static final String BASE_URL = "http://api.twitter.com/1/";
+    private static final String BASE_URL = "https://api.twitter.com/";
 
 
     private static AsyncHttpClient client = new AsyncHttpClient();
@@ -20,6 +20,8 @@ public class TwitterClient {
     }
 
     public static void post(String url, RequestParams params, AsyncHttpResponseHandler responseHandler) {
+
+        System.out.println("SS");
         client.post(getAbsoluteUrl(url), params, responseHandler);
     }
 
